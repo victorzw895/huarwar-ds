@@ -1,0 +1,17 @@
+{
+  "extends": "@repo/typescript-config/react-library.json",
+  "include": ["src", "lib"],
+  "exclude": ["dist", "build", "node_modules"],
+  "moduleResolution": "NodeNext",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "#/*": ["./lib/*"]
+    },
+    "types": ["vitest/globals", "jest", "node", "react", "react-dom", "@types/jest", "@types/node", "@types/react", "@types/react-dom", "@types/jest-axe", "@testing-library/jest-dom"],
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+  },
+}
