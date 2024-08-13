@@ -1,48 +1,48 @@
-import { baseTokens } from "#/styles/themes/ta/baseTokens";
+import { baseTokens } from '#/styles/themes/hwr/baseTokens';
 
 export const makeBaseAliasTokens = () => ({
-  slate: baseTokens["ta-slate"],
-  white: baseTokens.white,
-  grey: {
-    softest: baseTokens["ta-grey-50"],
-    softer: baseTokens["ta-grey-100"],
-    soft: baseTokens["ta-grey-200"],
-    lightest: baseTokens["ta-grey-300"],
-    light: baseTokens["ta-grey-400"],
-    default: baseTokens["ta-grey-500"],
-    dark: baseTokens["ta-grey-600"],
-    darker: baseTokens["ta-grey-700"],
-    darkest: baseTokens["ta-grey-900"],
-  },
-  success: {
-    softest: baseTokens["ta-green-50"],
-    default: baseTokens["ta-green-700"],
-    dark: baseTokens["ta-green-800"],
-    darkest: baseTokens["ta-green-900"],
-  },
-  critical: {
-    softest: baseTokens["ta-red-50"],
-    default: baseTokens["ta-red-700"],
-    dark: baseTokens["ta-red-800"],
-    darkest: baseTokens["ta-red-900"],
-  },
-  warning: {
-    softest: baseTokens["ta-orange-50"],
-    default: baseTokens["ta-orange-500"],
-    dark: baseTokens["ta-orange-600"],
-    darkest: baseTokens["ta-orange-700"],
-  },
-  information: {
-    softest: baseTokens["ta-aqua-50"],
-    default: baseTokens["ta-aqua-600"],
-    dark: baseTokens["ta-aqua-700"],
-    darkest: baseTokens["ta-aqua-800"],
-  },
-  attention: {
-    softest: baseTokens["ta-yellow-50"],
-    default: baseTokens["ta-yellow-500"],
-    dark: baseTokens["ta-yellow-700"],
-    darkest: baseTokens["ta-yellow-800"],
-  },
-  blackAlternative: baseTokens["ta-slate"],
+	slate: baseTokens['hwr-slate'],
+	white: baseTokens.white,
+	grey: {
+		softest: baseTokens['hwr-grey-50'],
+		softer: baseTokens['hwr-grey-100'],
+		soft: baseTokens['hwr-grey-200'],
+		lightest: baseTokens['hwr-grey-300'],
+		light: baseTokens['hwr-grey-400'],
+		default: baseTokens['hwr-grey-500'],
+		dark: baseTokens['hwr-grey-600'],
+		darker: baseTokens['hwr-grey-700'],
+		darkest: baseTokens['hwr-grey-900'],
+	},
+	success: {
+		softest: baseTokens['hwr-green-50'],
+		default: baseTokens['hwr-green-700'],
+		dark: baseTokens['hwr-green-800'],
+		darkest: baseTokens['hwr-green-900'],
+	},
+	critical: {
+		softest: baseTokens['hwr-red-50'],
+		default: baseTokens['hwr-red-700'],
+		dark: baseTokens['hwr-red-800'],
+		darkest: baseTokens['hwr-red-900'],
+	},
+	warning: {
+		softest: baseTokens['hwr-orange-50'],
+		default: baseTokens['hwr-orange-500'],
+		dark: baseTokens['hwr-orange-600'],
+		darkest: baseTokens['hwr-orange-700'],
+	},
+	information: {
+		softest: baseTokens['hwr-aqua-50'],
+		default: baseTokens['hwr-aqua-600'],
+		dark: baseTokens['hwr-aqua-700'],
+		darkest: baseTokens['hwr-aqua-800'],
+	},
+	attention: {
+		softest: baseTokens['hwr-yellow-50'],
+		default: baseTokens['hwr-yellow-500'],
+		dark: baseTokens['hwr-yellow-700'],
+		darkest: baseTokens['hwr-yellow-800'],
+	},
+	blackAlternative: baseTokens['hwr-slate'],
 });

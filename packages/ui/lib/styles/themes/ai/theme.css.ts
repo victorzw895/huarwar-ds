@@ -3,7 +3,7 @@ import { aiTokens } from './tokens';
 import { createTheme } from '@vanilla-extract/css';
 import { makePrimaryAliasTokens } from '#/styles/utils/makePrimaryAliasTokens';
 import { makeBaseAliasTokens } from '#/styles/utils/makeBaseAliasTokens';
-import { taTokens } from '#/styles/themes/ta/tokens';
+import { hwrTokens } from '#/styles/themes/hwr/tokens';
 
 export const aiTheme = createTheme(
 	aliasContract,
@@ -27,7 +27,7 @@ export const aiTheme = createTheme(
 		},
 		quaternary: {
 			default: aiTokens['ai-navy-1000'],
-			softest: taTokens['ta-red-50'],
+			softest: hwrTokens['hwr-red-50'],
 		},
 		quinary: aiTokens['ai-darkgreen-500'],
 	},

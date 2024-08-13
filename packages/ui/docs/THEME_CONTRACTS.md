@@ -3,16 +3,16 @@
 These follow specifications detailed in the Design System Figma.
 Theme contracts are equivalent to a token layer
 
-|token layer|theme contract       |example                                                          |
-|-----------|---------------------|-----------------------------------------------------------------|
-|base token |themes/ta/tokens.ts  |taTokens['ta-blue-50'] -> '#E6E6FF'                              |
-|alias token|aliasContract.css.ts |aliasContract['primary-softest'] -> taTokens['ta-blue-50']       |
-|role token |theme.css.ts         |vars.bg['brand-primary-soft'] -> aliasContract['primary-softest']|
+| token layer | theme contract       | example                                                           |
+| ----------- | -------------------- | ----------------------------------------------------------------- |
+| base token  | themes/hwr/tokens.ts | hwrTokens['hwr-blue-50'] -> '#E6E6FF'                             |
+| alias token | aliasContract.css.ts | aliasContract['primary-softest'] -> hwrTokens['hwr-blue-50']      |
+| role token  | theme.css.ts         | vars.bg['brand-primary-soft'] -> aliasContract['primary-softest'] |
 
 ## Base Token
 
-These are brand specific tokens. Generally prefixed by the brand shortname (eg. 'ta')
-There are common shared tokens among all the brands located in [baseTokens](../lib/styles/themes/ta/baseTokens.ts)
+These are brand specific tokens. Generally prefixed by the brand shortname (eg. 'hwr')
+There are common shared tokens among all the brands located in [baseTokens](../lib/styles/themes/hwr/baseTokens.ts)
 
 - baseTokens: include `slate`, `white`, `grey variants`, and `semantic variants`
 - tokens: These are brand specific color variants constants (eg. [ai/tokens.ts](../lib/styles/themes/ai/tokens.ts))
@@ -23,7 +23,7 @@ In `[brand-prefix]/theme.css.ts` you will have a `brand theme` generated using `
 These `alias-token layer` theme is a constant used throughout the design system, and will reference a different brand color variant depending on which brand was applied to the application's root element.
 
 ```ts
-// ta/theme.css.ts
+// hwr/theme.css.ts
 
 // Alias Token Layer
 
@@ -55,7 +55,6 @@ These `alias-token layer` theme is a constant used throughout the design system,
 //     --grey-dark__1con5qzw: #80909E;
 //     --grey-darker__1con5qzx: #64707C;
 // etc...
-
 ```
 
 ## Role Token
@@ -96,21 +95,21 @@ See More details on [ThemeProvider](../lib/styles/ThemeProvider.tsx)
 
 ```tsx
 // App.tsx
-import { taTheme } from "@huarwar/ui/themes/taTheme";
+import { hwrTheme } from '@huarwar/ui/themes/hwrTheme';
 // role theme already applied within ThemeProvider
-import { ThemeProvider } from "@huarwar/ui";
+import { ThemeProvider } from '@huarwar/ui';
 
 function App() {
-  return (
-    <ThemeProvider brand={taTheme}>
-        {/* <div ... */}
-        {/* 
+	return (
+		<ThemeProvider brand={hwrTheme}>
+			{/* <div ... */}
+			{/* 
           // Example <Button> component had a 
           // backgroundColor style that references `--primary-softest`
-          // with `taTheme` applied above, we would be able to link 
-          // `--primary-softest` with `#E7F0FF` hexcode specific to the `ta` brand
+          // with `hwrTheme` applied above, we would be able to link 
+          // `--primary-softest` with `#E7F0FF` hexcode specific to the `hwr` brand
         */}
-    </ThemeProvider>
-  )
+		</ThemeProvider>
+	);
 }
 ```

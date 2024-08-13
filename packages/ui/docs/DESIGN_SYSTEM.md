@@ -46,7 +46,7 @@ export buttonStyle = style({
 })
 ```
 
-- `themes`: Folder containing prefix brand themes eg: `ai, bi, ta`. These export string className that applies brand color css variables
+- `themes`: Folder containing prefix brand themes eg: `ai, bi, hwr`. These export string className that applies brand color css variables
 - `sprinkless.css.ts`: These contain tailwind-like atomic css generated at build time. These would help reduce css files by making certain css properties and values reusable. Would be able to generate static CSS Framework to be consumed by applications that cannot leverage Design System components.
 
 - `muiTheme.ts`: MUI library is leveraged for its layout components such as `Grid`, `Stack`, `Box`. This file contains overrides for the layout `breakpoints` and `spacing` values.
@@ -76,9 +76,9 @@ Or See [Styling Guide](./STYLING_GUIDE.md) to see how styles are applied to comp
 // App.tsx
 
 import { ThemeProvider } from '@huarwar/ui';
-import { taTheme } from '@huarwar/ui/themes/taTheme';
+import { hwrTheme } from '@huarwar/ui/themes/hwrTheme';
 
 function App() {
-	return <ThemeProvider brand={taTheme}>{/* <div> ... */}</ThemeProvider>;
+	return <ThemeProvider brand={hwrTheme}>{/* <div> ... */}</ThemeProvider>;
 }
 ```

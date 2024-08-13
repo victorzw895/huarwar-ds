@@ -3,7 +3,7 @@ import { biTokens } from './tokens';
 import { createTheme } from '@vanilla-extract/css';
 import { makeBaseAliasTokens } from '#/styles/utils/makeBaseAliasTokens';
 import { makePrimaryAliasTokens } from '#/styles/utils/makePrimaryAliasTokens';
-import { taTokens } from '#/styles/themes/ta/tokens';
+import { hwrTokens } from '#/styles/themes/hwr/tokens';
 
 export const biTheme = createTheme(
 	aliasContract,
@@ -27,7 +27,7 @@ export const biTheme = createTheme(
 		},
 		quaternary: {
 			default: biTokens['bi-darkblue-500'],
-			softest: taTokens['ta-aqua-50'],
+			softest: hwrTokens['hwr-aqua-50'],
 		},
 		quinary: biTokens['bi-red-500'],
 	},
