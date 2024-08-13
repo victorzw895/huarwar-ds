@@ -44,9 +44,9 @@ export default defineConfig({
 		vanillaExtractPlugin({
 			identifiers: ({ filePath, debugId, hash }) => {
 				if (filePath.startsWith('lib/styles')) {
-					return `ta_${debugId}`;
+					return `hwr_${debugId}`;
 				}
-				return `ta_${hash}`;
+				return `hwr_${hash}`;
 			},
 		}),
 		libInjectCss(),

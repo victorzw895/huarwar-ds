@@ -29,7 +29,7 @@ These `alias-token layer` theme is a constant used throughout the design system,
 
 // exports string className with following properties
 
-// .theme_taTheme__1lyyd4x0 {
+// .theme_hwrTheme__1lyyd4x0 {
 //     --primary-softest__1con5qz0: #E7F0FF;
 //     --primary-softer__1con5qz1: #B3D2FF;
 //     --primary-soft__1con5qz2: #8EBCFF;

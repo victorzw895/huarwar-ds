@@ -10,7 +10,7 @@ But we can modify this to have meaningful names for consumption.
 export defineConfig({
   plugins: [
     vanillaExtractPlugin({
-      identifiers: ({ debugId }) => `ta_${debugId}`
+      identifiers: ({ debugId }) => `hwr_${debugId}`
     }),
   ]
 })
@@ -33,13 +33,13 @@ If you are developing a production application, we recommend updating the config
 
 ```js
 export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
+	// other rules...
+	parserOptions: {
+		ecmaVersion: 'latest',
+		sourceType: 'module',
+		project: ['./tsconfig.json', './tsconfig.node.json'],
+		tsconfigRootDir: __dirname,
+	},
 };
 ```
 
